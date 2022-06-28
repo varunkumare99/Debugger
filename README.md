@@ -1,7 +1,7 @@
 # Linux Debugger 
 [Reference] (https://blog.tartanllama.xyz/writing-a-linux-debugger-setup/)
 
-## Debugger the following operations:
+### Debugger supports the following operations:
 
 * Setting Breakpoints
     - break 0xAddress
@@ -22,12 +22,12 @@
     - variables
 * Execute single instruction
     - stepi
-* Stepping over functions
+* Stepping over functions (on simple functions, i.e no support for dynamic library)
     - step (step next)
     - next (step over function)
     - finish (step return)
 
-##Build
+### Build
 * run cmake
 * make
 * ./debugger <executable_name>
